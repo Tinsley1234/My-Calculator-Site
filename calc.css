@@ -1,0 +1,41 @@
+html{   
+    text-align: center;
+}
+
+table {
+    background-color: rgb(231, 191, 198);
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px rgb(46, 45, 45);
+    /* border-collapse: collapse; */
+    position: absolute;
+    left: 38%;
+}
+
+#box{
+    padding: 0 0 0 0;
+    height: 50px;
+    width: 290px;
+    margin-top: 10px;
+
+}
+
+td{
+    padding: 20px;
+}
+
+button{
+    border: 0.5px solid grey;
+    border-radius: 100%;
+    font-size: large;
+    text-align: center;
+    padding: 8px 10px 8px 10px;
+    
+}
+button:hover{
+    background-color: rgb(186, 206, 230);
+}
+
+.animation{
+    opacity: 30%;
+}
