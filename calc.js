@@ -1,17 +1,27 @@
-alert(" Welcome");
-// Add animation late
+// Add animation later
+// do same thing with jquery
 
-function calculte(){
-    
-}
+let initialInput = " ";
+let previousInput = null;
+let operator = null;
 
-var numOfButtons = document.querySelectorAll(".btn").length;
- 
-function clicks(){
-    console.log(this.innerHTML);
-}
+const outputBox = document.getElementById("box");
 
-for(i=0; i<numOfButtons ; i++){
-    document.querySelectorAll(".btn")[i].addEventListener("click", clicks)
-}
+// Number button functionality
+document.querySelectorAll("[data-number]").forEach(button => {button.addEventListener(
+    "click", ()=>{
+        initialInput+=button.dataset.number;
+        outputBox.value = initialInput;
+    }
+)});
+
+// var noOfDataNumber = document.querySelectorAll("[data-number]").length;
+// for (i=0; i<= noOfDataNumber ; i++){
+    // document.querySelectorAll("[data-number]")[i].addEventlistener("click", function(){
+        // console.log(innerHTML)
+// })
+// }
+// 
+
+
 

@@ -8,48 +8,47 @@
 </head>
 <body>
 <h1>Calculator Site</h1>
+<div id="calculator">
+    <input title ="hi" type="text" name="" id="box" readonly>
 
-<table>
-    <thead>
-        <tr>
-        <th colspan="4"><input title ="hi" type="text" name="" id="box" readonly></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><button class="btn" title="" type="button"> c </button></td>
-            <td><button class="btn" title="" type="button">() </button></td>
-            <td><button class="btn" title="" type="button">% </button></td>
-            <td><button class="btn" title="" type="button">/ </button></td></td>
-        </tr> 
-        <tr> 
-            <td><button class="btn" title="" type="button">7 </button></td></td>
-            <td><button class="btn" title="" type="button">8 </button></td></td>
-            <td><button class="btn" title="" type="button">9 </button></td></td>
-            <td><button class="btn" title="" type="button">x </button></td></td>
-        </tr> 
-        <tr> 
-            <td><button class="btn" title="" type="button">4 </button></td></td>
-            <td><button class="btn" title="" type="button">5 </button></td></td>
-            <td><button class="btn" title="" type="button">6 </button></td></td>
-            <td><button class="btn" title="" type="button">- </button></td></td>
-        </tr> 
-        <tr> 
-            <td><button class="btn" title="" type="button">1 </button></td></td>
-            <td><button class="btn" title="" type="button">2 </button></td></td>
-            <td><button class="btn" title="" type="button">3 </button></td></td>
-            <td><button class="btn" title="" type="button">+ </button></td></td>
-        </tr> 
-        <tr>
-            <td> <button class="btn" title="" type="button">mod </button></td></td>
-            <td> <button class="btn" title="" type="button">0 </button></td></td>
-            <td> <button class="btn" title="" type="button">. </button></td></td>
-            <td> <button class="btn" title="" type="button">= </button></td></td>
-        </tr>
+    <div id="buttons">
+        <div id="first-set"> 
+            <button id="clear" title="" type="button"> c </button>
+            <button data-operator="()" title="" type="button">() </button>
+            <button data-operator="%" title="" type="button">% </button>
+            <button data-operator="/" title="" type="button">/ </button>
+        </div>
+
+        <div id="second-set"> 
+            <button data-number="7" title="" type="button">7 </button>
+            <button data-number="8" title="" type="button">8 </button>
+            <button data-number="9" title="" type="button">9 </button>
+            <button data-operator="*" title="" type="button">* </button>
+        </div>
+
+        <div id="third-set"> 
+            <button data-number="4" title="" type="button">4 </button>
+            <button data-number="5" title="" type="button">5 </button>
+            <button data-number="6" title="" type="button">6 </button>
+            <button data-operator="-" title="" type="button">- </button>
+        </div>
         
-    </tbody>
-</table>
-
+        <div id="fourth-set"> 
+            <button data-number="1" title="" type="button">1 </button>
+            <button data-number="2" title="" type="button">2 </button>
+            <button data-number="3" title="" type="button">3 </button>
+            <button data-operator="+" title="" type="button">+ </button>
+        </div>
+        
+        <div id="last-set"> 
+            <button data-operator="mod" title="" type="button">mod </button>
+            <button data-number="0" title="" type="button">0 </button>
+            <button data-number="." title="" type="button">. </button>
+            <button id="equals" title="" type="button">= </button>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -70,6 +69,7 @@
     
 </body>
 <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="calc.js" lang="UTF-8"></script>
 </footer>
 </html>
