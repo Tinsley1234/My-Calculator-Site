@@ -1,5 +1,3 @@
-// Add animation later
-// do same thing with jquery
 let display = document.querySelector('.display');
 
 let currentInput = '';
